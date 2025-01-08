@@ -208,3 +208,97 @@
 // ***********************************************************
 /**************** INTRODUCTION TO OBJECTS ****************************/
 // ***********************************************************
+
+// // creating object with object literal syntax
+// const Davut = {
+//     firstName: `Davut`,
+//     lastName: `Simsek`,
+//     age: 2037 - 1992,
+//     job: `engineer`,
+//     friends: [`Michael`, `Peter`, `Steven`]
+// }
+
+// ***********************************************************
+/**************** DOT VS BRACKET NOTATION ****************************/
+// ***********************************************************
+
+// const davut = {
+//     firstName: `Davut`,
+//     lastName: `Simsek`,
+//     age: 2037 - 1992,
+//     job: `engineer`,
+//     friends: [`Michael`, `Peter`, `Steven`]
+// };
+
+// console.log(davut);
+
+// // DOT notation, has to be exact value
+// console.log(davut.lastName);
+// console.log(davut[`lastName`]);
+
+// // BRACKET notation, can be a computed value
+// const nameKey = `Name`;
+// console.log(davut[`first${nameKey}`]);
+// console.log(davut[`last${nameKey}`]);
+
+// // Example of bracket notation
+
+// const interestedIn = prompt(`What do you want to know about Davut? Choose between firstName, lastName, age, job, and friends.`);
+// console.log(davut[interestedIn]);
+
+// if (davut[interestedIn]) {
+//     console.log(davut[interestedIn]);
+// } else {
+//     console.log(`Wrong request! Choose between firstName, lastName, age, job, and friends.`);
+// }
+
+// davut.location = `Spain`;
+// davut[`twitter`] = `@davuttsimsek`;
+// console.log(davut);
+
+// // Challenge example
+// // `Davut has 3 friends, and his best friend is called Michael`
+
+// console.log(`${davut.firstName} has ${davut.friends.length} friends, bestie is ${davut.friends[0]}.`);
+
+// ***********************************************************
+/**************** OBJECT METHODS ****************************/
+// ***********************************************************
+
+// const davut = {
+//     firstName: `Davut`,
+//     lastName: `Simsek`,
+//     birthYear: 1992,
+//     job: `engineer`,
+//     friends: [`Michael`, `Peter`, `Steven`],
+//     hasDriverLicense: true,
+
+//     // calcAge: function (birthYear) {
+//     //     return 2037 - birthYear;
+//     // }
+
+//     // calcAge: function () {
+//     //     // console.log(this);
+//     //     return 2037 - this.birthYear;
+//     // }
+
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     },
+
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`;
+//     }
+
+// };
+
+// // console.log(davut.calcAge());
+
+// // console.log(davut.age);
+// // console.log(davut.age);
+// // console.log(davut.age);
+
+// // Example challange
+// // `Davut is a 45 years old engineer, and he has/no driver's license.`
+// console.log(davut.getSummary());

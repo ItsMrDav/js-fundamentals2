@@ -146,3 +146,72 @@
 // ***********************************************************
 /**************** INTRODUCTION TO OBJECTS ****************************/
 // ***********************************************************
+
+// const myCountry = {
+//     country: `Spain`,
+//     capital: `Madrid`,
+//     language: `Spanish`,
+//     population: 47.5,
+//     neigbors: [`France`, `Andorra`, `Portugal`, `U.K`, `Morocco`],
+//     describe: function () {
+//         console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neigbors.length} neigboring countries and a capital called ${this.capital}.`)
+//     },
+//     checkIsland: function () {
+//         // this.isIsland = this.neigbors.length < 1 ? true : false;
+//         this.isIsland = !Boolean(this.neigbors.length);
+//     }
+// }
+
+// ***********************************************************
+/**************** DOT VS BRACKET NOTATION ****************************/
+// ***********************************************************
+
+// myCountry.population += 2;
+// myCountry[`population`] -= 2;
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neigbors.length} neigboring countries and a capital called ${myCountry.capital}.`);
+
+// ***********************************************************
+/**************** OBJECT METHODS ****************************/
+// ***********************************************************
+
+// myCountry.describe();
+// myCountry.checkIsland();
+// console.log(myCountry.isIsland);
+// console.log(myCountry);
+
+// ***********************************************************
+/**************** CHALLENGE #7 ****************************/
+// ***********************************************************
+
+const mark = {
+    fullName: `Mark Miller`,
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+}
+
+const john = {
+    fullName: `John Smith`,
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+}
+
+mark.calcBMI();
+john.calcBMI();
+console.log(mark.BMI);
+console.log(john.BMI);
+
+if (mark.BMI > john.BMI) {
+    console.log(`${mark.fullName}'s BMI(${mark.BMI}) is higher than ${john.fullName}'s(${john.BMI})!`);
+} else if (john.BMI > mark.BMI) {
+    console.log(`${john.fullName}'s BMI(${mark.BMI}) is higher than ${mark.fullName}'s(${john.BMI})!`);
+} else {
+    console.log(`Both ${mark.fullName} and ${john.fullName} have the same BMI${john.BMI}.`)
+}
