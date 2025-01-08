@@ -89,3 +89,60 @@
 // ***********************************************************
 /**************** INTRODUCTION TO ARRAYS ****************************/
 // ***********************************************************
+
+// const populations = [47.5, 88, 335, 120];
+// console.log(`Is array has 4 elements: ${populations.length === 4 ? true : false}.`);
+
+// function calcPer(population) {
+//     return (population / 7900) * 100;
+// }
+
+// const percentages = [calcPer(populations[0]), calcPer(populations[1]), calcPer(populations[2]), calcPer(populations[populations.length - 1])];
+// console.log(percentages);
+
+// ***********************************************************
+/**************** BASIC ARRAY METHODS ****************************/
+// ***********************************************************
+
+// const neighbors = [`France`, `Andorra`, `Portugal`];
+// neighbors.push(`Utophia`);
+// neighbors.pop();
+
+// console.log(`${neighbors.includes(`Germany`) === false ? `Not a central EU country` : null}`);
+// !neighbors.includes(`Germany`) && console.log(`Probably not a central European country.`);
+
+// console.log(neighbors);
+// neighbors[neighbors.indexOf(`Andorra`)] = `Republic of Andorra`;
+// console.log(neighbors);
+
+// ***********************************************************
+/**************** CODING CHALLENGE #6 ****************************/
+// ***********************************************************
+
+// const calcTip = bill => {
+//     let tip;
+//     if (bill >= 50 && bill <= 300) {
+//         tip = bill * 0.15;
+//         return tip;
+//     } else {
+//         tip = bill * 0.2;
+//         return tip;
+//     }
+// }
+
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// console.log(calcTip(100));
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(125), calcTip(555), calcTip(44)];
+
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills);
+// console.log(tips);
+// console.log(totals);
+
+// ***********************************************************
+/**************** INTRODUCTION TO OBJECTS ****************************/
+// ***********************************************************

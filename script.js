@@ -124,3 +124,87 @@
 // ***********************************************************
 /**************** INTRODUCTION TO ARRAYS ****************************/
 // ***********************************************************
+
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
+
+// // There are two ways to create array, first with []
+// const friends = [`Michael`, `Steven`, `Peter`];
+// console.log(friends);
+// // Another way is with new Array()
+// const y = new Array(1992, 1984, 2008, 2020);
+// console.log(y);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// // How to get last index using .length
+// console.log(friends[friends.length - 1]);
+
+// // How to mutate array's element
+// friends[2] = `Jay`;
+// console.log(friends);
+
+// const firstName = `Davut`;
+// const davut = [firstName, `Simsek`, 2037 - 1992, `student`, friends];
+// console.log(davut);
+
+// // An exercise
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+// console.log(ages);
+
+// ***********************************************************
+/**************** BASIC ARRAY METHODS ****************************/
+// ***********************************************************
+
+// // Js has some built in functions, we can apply them to array, they're called array methods.
+
+// // Add elements push(last),unshift(first), when used in a variable they RETURN length of the array
+// const friends = [`Michael`, `Steven`, `Peter`];
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift(`John`);
+// console.log(friends);
+
+// // Remove elements pop(last),shift(first), when used in a varaibla they RETURN removed element
+// friends.pop();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
+
+// friends.shift();
+// console.log(friends);
+
+// // indexOf(===element) true>elementIndex,false>-1
+// friends.push(23);
+// console.log(friends.indexOf(`Steven`));
+// console.log(friends.indexOf(`Bob`));
+// console.log(friends.indexOf(`23`));
+// // includes(===element) true>true,false>false
+// friends.push(23);
+// console.log(friends.includes(`Steven`));
+// console.log(friends.includes(`Bob`));
+// console.log(friends.includes(`23`));
+
+// if (friends.includes(`Steven`)) {
+//     console.log(`You have a friend called that name.`)
+// }
+
+// ***********************************************************
+/**************** INTRODUCTION TO OBJECTS ****************************/
+// ***********************************************************
