@@ -183,35 +183,124 @@
 /**************** CHALLENGE #7 ****************************/
 // ***********************************************************
 
-const mark = {
-    fullName: `Mark Miller`,
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-        this.BMI = this.mass / (this.height * this.height);
-        return this.BMI;
-    }
-}
+// const mark = {
+//     fullName: `Mark Miller`,
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         this.BMI = this.mass / (this.height * this.height);
+//         return this.BMI;
+//     }
+// }
 
-const john = {
-    fullName: `John Smith`,
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-        this.BMI = this.mass / (this.height * this.height);
-        return this.BMI;
-    }
-}
+// const john = {
+//     fullName: `John Smith`,
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         this.BMI = this.mass / (this.height * this.height);
+//         return this.BMI;
+//     }
+// }
 
-mark.calcBMI();
-john.calcBMI();
-console.log(mark.BMI);
-console.log(john.BMI);
+// mark.calcBMI();
+// john.calcBMI();
+// console.log(mark.BMI);
+// console.log(john.BMI);
 
-if (mark.BMI > john.BMI) {
-    console.log(`${mark.fullName}'s BMI(${mark.BMI}) is higher than ${john.fullName}'s(${john.BMI})!`);
-} else if (john.BMI > mark.BMI) {
-    console.log(`${john.fullName}'s BMI(${mark.BMI}) is higher than ${mark.fullName}'s(${john.BMI})!`);
-} else {
-    console.log(`Both ${mark.fullName} and ${john.fullName} have the same BMI${john.BMI}.`)
-}
+// if (mark.BMI > john.BMI) {
+//     console.log(`${mark.fullName}'s BMI(${mark.BMI}) is higher than ${john.fullName}'s(${john.BMI})!`);
+// } else if (john.BMI > mark.BMI) {
+//     console.log(`${john.fullName}'s BMI(${mark.BMI}) is higher than ${mark.fullName}'s(${john.BMI})!`);
+// } else {
+//     console.log(`Both ${mark.fullName} and ${john.fullName} have the same BMI${john.BMI}.`)
+// }
+
+// ***********************************************************
+/**************** THE FOR LOOP ****************************/
+// ***********************************************************
+
+// for (let i = 1; i <= 50; i++) {
+//     console.log(`Voter number ${i} is currently voting.`);
+// }
+
+// ***********************************************************
+/**************** LOOPING ARRAYS, BREAK, CONTINUE ****************************/
+// ***********************************************************
+
+// const percentageOfWorld = population => (population / 7900) * 100;
+// const populations = [47.5, 88, 335, 120];
+// const percentages2 = [];
+// for (let i = 0; i < populations.length; i++) {
+//     percentages2.push(percentageOfWorld(populations[i]));
+// }
+// console.log(percentages2);
+
+// ***********************************************************
+/**************** LOOPING BACKWARDS, LOOPS IN LOOPS ****************************/
+// ***********************************************************
+
+// const listOfNeigbors = [[`Canada`, `Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russia`]];
+// console.log(listOfNeigbors[0][1]);
+
+// for (let i = 0; i < listOfNeigbors.length; i++) {
+//     for (let x = 0; x < listOfNeigbors[i].length; x++) {
+//         console.log(`Neigbor: ${listOfNeigbors[i][x]}`);
+//     }
+// }
+
+// ***********************************************************
+/**************** WHILE LOOP ****************************/
+// ***********************************************************
+
+// const percentageOfWorld = population => (population / 7900) * 100;
+// const populations = [47.5, 88, 335, 120];
+// const percentages2 = [];
+// // for (let i = 0; i < populations.length; i++) {
+// //     percentages2.push(percentageOfWorld(populations[i]));
+// // }
+// let i = 0;
+// while (i < populations.length) {
+//     percentages2.push(percentageOfWorld(populations[i]));
+//     i++;
+// }
+// console.log(percentages2);
+
+// ***********************************************************
+/**************** CODING CHALLENGE #8 ****************************/
+// ***********************************************************
+
+// const calcTip = bill => {
+//     let tip;
+//     if (bill >= 50 && bill <= 300) {
+//         tip = bill * 0.15;
+//         return tip;
+//     } else {
+//         tip = bill * 0.2;
+//         return tip;
+//     }
+// }
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//     tips.push(calcTip(bills[i]));
+//     totals.push(bills[i] + tips[i]);
+// }
+
+// console.log(bills, tips, totals);
+
+// const calcAverage = arr => {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
+
+// console.log(calcAverage(bills));
+// console.log(calcAverage(tips));
+// console.log(calcAverage(totals));
+

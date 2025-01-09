@@ -302,3 +302,105 @@
 // // Example challange
 // // `Davut is a 45 years old engineer, and he has/no driver's license.`
 // console.log(davut.getSummary());
+
+// ***********************************************************
+/**************** THE FOR LOOP ****************************/
+// ***********************************************************
+
+// console.log(`Lifting weights repetion 1 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 2 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 3 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 4 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 5 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 6 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 7 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 8 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 9 🏋️‍♀️`);
+// console.log(`Lifting weights repetion 10 🏋️‍♀️`);
+
+// // for loops keep reunning while condition is true
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetion ${rep} 🏋️‍♀️`);
+// }
+
+// ***********************************************************
+/**************** LOOPING ARRAYS, BREAK, CONTINUE ****************************/
+// ***********************************************************
+
+// const davut = [`Davut`, `Simsek`, 2037 - 1992, `engineer`, [`Michael`, `Peter`, `Steven`], true];
+
+// const types = [];
+// for (let i = 0; i < davut.length; i++) {
+//     // reading from davut array
+//     console.log(davut[i], typeof davut[i]);
+
+//     // filling types array
+//     // types[i] = typeof davut[i];
+//     types.push(typeof davut[i]);
+
+// }
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// // continue(skip current iteration and continue) and break(completely terminate the loop)
+// console.log(`-----------ONLY STRINGS----------------`);
+// for (let i = 0; i < davut.length; i++) {
+//     if (typeof davut[i] !== 'string') continue;
+
+//     console.log(davut[i], typeof davut[i]);
+// }
+
+// console.log(`-----------BREAK WITH NUMBER----------------`);
+// for (let i = 0; i < davut.length; i++) {
+//     if (typeof davut[i] === `number`) break;
+//     console.log(davut[i], typeof davut[i]);
+// }
+
+// ***********************************************************
+/**************** LOOPING BACKWARDS, LOOPS IN LOOPS ****************************/
+// ***********************************************************
+
+// const davut = [`Davut`, `Simsek`, 2037 - 1992, `engineer`, [`Michael`, `Peter`, `Steven`]];
+
+// for (let i = davut.length - 1; i >= 0; i--) {
+//     console.log(davut[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`---------------- Starting exercise ${exercise}`);
+
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Exercise ${exercise} Lifting weight repetition ${rep} 🏋️‍♀️`);
+//     }
+// }
+
+// ***********************************************************
+/**************** WHILE LOOP ****************************/
+// ***********************************************************
+
+// // for loop
+// // for (let rep = 1; rep <= 10; rep++) {
+// //     console.log(`Lifting weights repetion ${rep} 🏋️‍♀️`);
+// // }
+// // while loop(it can work without a counter, use when u dont know how many iteration can be...)
+// let i = 0;
+// while (i <= 10) {
+//     // console.log(`WHILE LOOP.Lifting weights repetion ${i} 🏋️‍♀️`);
+//     i++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// // console.log(dice);
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log(`Loop is about to end...`);
+// }
